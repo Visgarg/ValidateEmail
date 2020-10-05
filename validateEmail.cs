@@ -6,7 +6,7 @@ namespace ValidateEmail
 {
     class validateEmail
     {
-        string pattern = @"^([a-zA-Z]{3,})\@([a-zA-Z0-9])+\.()$";
+        string pattern = @"^([a-zA-Z]{3,})\@([a-zA-Z0-9])+\.(com|net)$";
         public bool IsValidMail(string sample)
         {
           return  Regex.IsMatch(sample, pattern);
